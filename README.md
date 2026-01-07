@@ -1,68 +1,194 @@
-# 🍏 Planificador de Dieta ALPHA
+<div align="center">
+  <br />
+  <br />
+  
+  # <code>DIET_PLANNER_ALPHA</code>
+  
+  **FULL-STACK DIET PLANNING APPLICATION / LEARNING PROTOTYPE**
+  
+  <br />
 
-![Captura de pantalla](vistaprevia.webp)
-Version de prueba
-https://diet-planner-alpha.pages.dev/welcome/
+  <img src="https://img.shields.io/badge/ASTRO_5.9-FF5D01?style=for-the-badge&logo=astro&logoColor=white" alt="Astro" />
+  <img src="https://img.shields.io/badge/PREACT_10.26-673AB8?style=for-the-badge&logo=preact&logoColor=white" alt="Preact" />
+  <img src="https://img.shields.io/badge/SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/TAILWIND_3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+ 
 
-<br/>
-<br/>
-
-[![Astro](https://img.shields.io/badge/Astro-5.9-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
-[![Preact](https://img.shields.io/badge/Preact-10.26-673AB8?logo=preact)](https://preactjs.com/)
-[![Supabase](https://img.shields.io/badge/Supabase-GREEN?logo=supabase)](https://supabase.io/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-
-**Planificador de dietas Alpha** es un prototipo funcional y una prueba de concepto para una aplicación web de planificación de dietas. Este proyecto sirvió como un campo de aprendizaje intensivo en la construcción de una aplicación full-stack moderna, integrando tecnologías como Astro, Preact, NanoStores y Supabase.
-
-La versión actual está **archivada y completa en su fase alfa**. Ha cumplido su misión de validar las funcionalidades principales y proporcionar una base de conocimiento sólida para su futura reconstrucción profesional.
-
-## 🚀 Características Implementadas (v0.1)
-
-#### Gestión de Usuario y Datos
-
-- 🔐 **Autenticación Completa:** Sistema unificado con OAuth (Google, GitHub) y email/contraseña a través de Supabase Auth.
-- 🗄️ **Base de Datos en la Nube:** Gestión de datos centralizada en Supabase (PostgreSQL).
-- 🔄 **Adaptador Híbrido de Datos:** Sincronización con Supabase y fallback inteligente a datos locales para funcionamiento offline.
-- 🗑️ **Eliminación Segura de Cuenta:** Gestión completa del ciclo de vida del usuario.
-
-#### Planificación y Análisis
-
-- 📅 **Planificador Semanal Interactivo:** Interfaz para organizar comidas diarias.
-- 📊 **Seguimiento de Macronutrientes:** Cálculo y visualización de la ingesta de calorías, proteínas, grasas y carbohidratos.
-- 📈 **Gráficos de Progreso:** Visualización del histórico de peso contra objetivos con Chart.js.
-- 🎯 **Gestión de Objetivos:** Creación y edición de metas de peso personalizadas.
-- 🛠️ **Panel de Administración:** Interfaz para gestionar la base de datos de comidas y suplementos.
-
-## ✈️ El Viaje del Proyecto y Estado Actual
-
-Este proyecto nació como un prototipo de desarrollo rápido para explorar una idea. Durante este proceso, se implementó una cantidad significativa de funcionalidades complejas, incluyendo la autenticación completa y una migración a una arquitectura de base de datos en la nube.
-
-Esta fase inicial ha sido un **éxito rotundo en términos de aprendizaje**, revelando la importancia de una arquitectura de software planificada y un diseño previo para la escalabilidad a largo plazo.
-
-Por ello, con los objetivos de aprendizaje cumplidos, **esta versión alfa (v0.1) se considera finalizada y archivada**. El código permanece como testimonio del prototipo funcional.
-
-## 💡 Próximos Pasos: El Renacimiento con Vue.js
-
-El conocimiento adquirido en esta alfa es la base para la siguiente fase: una **reconstrucción completa del proyecto desde cero**. La nueva versión se desarrollará siguiendo las mejores prácticas de la industria:
-
-1.  **Diseño UX/UI Previo en Figma:** Creación de un diseño visual y de experiencia de usuario sólido, con un pequeño branding.
-2.  **Arquitectura Planificada:** Diseño de una arquitectura de front-end y back-end robusta y escalable.
-3.  **Nuevo Stack Tecnológico:** Reconstrucción con **Vue.js** para aprovechar su ecosistema y reactividad, que me ayude a aprender un nuevo lenguaje.
-4.  **Desarrollo Orientado a Componentes y Tests.**
-
-## 🛠️ Stack Tecnológico (v0.1)
-
-- **Framework**: Astro 5.9
-- **UI**: Tailwind CSS 3.4
-- **Componentes**: Preact 10.26
-- **Base de Datos**: Supabase (PostgreSQL)
-- **Autenticación**: Supabase Auth (OAuth + Email/Password)
-- **Gestión de Estado**: NanoStores
-- **Gráficos**: Chart.js 4.4
-- **Tipado**: TypeScript
-- **Ejecución de Scripts**: tsx
-- **Formateo de Código**: Prettier + ESLint
+  <br />
+  <br />
+</div>
 
 ---
 
-Desarrollado con ❤️ e por Samuh Lo | [@samuhlo](https://github.com/samuhlo)
+### 00. PREVIEW
+
+![Diet Planner Preview](vistaprevia.webp)
+
+> **ABSTRACT:** Prototipo funcional de aplicación web full-stack para planificación de dietas con autenticación completa, sincronización cloud/offline, y análisis nutricional. Sistema híbrido con Supabase backend y fallback local. Implementa OAuth, gestión de estado con NanoStores, y visualización de datos con Chart.js.
+>
+> <br />
+>
+> **DEMO LIVE:** [diet-planner-alpha.pages.dev/welcome](https://diet-planner-alpha.pages.dev/welcome/)
+>
+> <br />
+>
+> **STATUS:** Version alfa archivada. Proyecto completado como prueba de concepto y base de aprendizaje. Reconstrucción planificada con Vue.js.
+
+---
+
+### 01. ARCHITECTURE & DECISIONS
+
+| COMPONENT | TECH | NOTE |
+| :--- | :--- | :--- |
+| **Framework** | `Astro 5.9` | Islands architecture para rendering optimizado. |
+| **UI Library** | `Preact 10.26` | React-compatible, menor footprint. |
+| **Styling** | `Tailwind CSS 3.4` | Utility-first approach. |
+| **Backend** | `Supabase (PostgreSQL)` | Cloud database + Auth as a Service. |
+| **Authentication** | `Supabase Auth` | OAuth (Google, GitHub) + Email/Password. |
+| **State Management** | `NanoStores` | Minimal atomic state pattern. |
+| **Data Sync** | `Custom Hybrid Adapter` | Cloud-first con fallback a localStorage. |
+| **Visualization** | `Chart.js 4.4` | Gráficos de progreso de peso. |
+| **Type Safety** | `TypeScript` | Strict mode enabled. |
+| **Code Quality** | `Prettier + ESLint` | Automated formatting & linting. |
+
+<br>
+
+### 02. KEY FEATURES
+
+#### **AUTHENTICATION SYSTEM**
+- OAuth multi-provider (Google, GitHub)
+- Email/Password tradicional
+- Gestión completa del ciclo de vida del usuario
+- Eliminación segura de cuenta con cascada de datos
+
+#### **DATA MANAGEMENT**
+- Sincronización cloud/offline automática
+- Adaptador híbrido inteligente
+- Fallback a datos locales en caso de fallo de red
+- Migración de datos existentes a Supabase
+
+#### **PLANNING & TRACKING**
+- Planificador semanal interactivo
+- Cálculo automático de macronutrientes
+- Resumen nutricional diario y semanal
+- Sistema de recetas con ingredientes estructurados
+- Gestión de suplementos y snacks
+
+#### **PROGRESS ANALYSIS**
+- Gráficos históricos de peso
+- Comparación con objetivos personalizados
+- Visualización de tendencias temporales
+- Panel de administración para contenido
+
+<br>
+
+### 03. INSTALLATION
+
+*Run local environment:*
+
+```bash
+# 1. Clone
+git clone https://github.com/samuhlo/diet-planner-alpha.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Configure Supabase
+# Create .env file with:
+# PUBLIC_SUPABASE_URL=your_supabase_url
+# PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# 4. Ignite
+npm run dev
+```
+
+### 04. PROJECT JOURNEY
+
+Este proyecto nació como experimento de desarrollo rápido para validar una idea. Evolucionó orgánicamente desde un prototipo con datos estáticos hasta una aplicación full-stack completa con backend en la nube.
+
+**LEARNING OUTCOMES:**
+- Implementación de autenticación OAuth multi-provider
+- Arquitectura híbrida cloud/offline
+- Gestión de estado reactivo con NanoStores
+- Integración Astro + Preact en Islands Architecture
+- Database design y migraciones con Supabase
+- TypeScript strict mode en producción
+
+**ARCHIVED STATUS:**
+La versión alfa (v0.1) cumplió su objetivo como prueba de concepto y vehículo de aprendizaje. El código permanece como referencia técnica del prototipo funcional.
+
+### 05. NEXT PHASE: VUE.JS REBUILD
+
+La reconstrucción profesional seguirá un proceso planificado:
+
+1. **UX/UI Design** → Figma prototypes con branding definido
+2. **Architecture Planning** → Documentación de estructura escalable
+3. **New Tech Stack** → Migration a Vue.js 3 (Composition API)
+4. **Component-Driven Development** → Test-first approach
+5. **Performance Optimization** → Core Web Vitals targets
+
+<br>
+
+### 06. CODE SNIPPETS
+
+#### A. HYBRID DATA ADAPTER
+Sistema que sincroniza Supabase con fallback inteligente a localStorage:
+
+```typescript
+// services/dataAdapter.ts
+export const dataAdapter = {
+  async getRecipes() {
+    try {
+      // Intenta cloud primero
+      const { data, error } = await supabase
+        .from('recipes')
+        .select('*');
+      
+      if (!error && data) {
+        // Cache local exitoso
+        localStorage.setItem('recipes_cache', JSON.stringify(data));
+        return data;
+      }
+    } catch (e) {
+      // Fallback a cache local
+      const cached = localStorage.getItem('recipes_cache');
+      return cached ? JSON.parse(cached) : staticRecipes;
+    }
+  }
+}
+```
+
+#### B. NANOSTORES STATE PATTERN
+Gestión de estado atómico y reactivo:
+
+```typescript
+// stores/planStore.ts
+export const weekPlan = map<WeekPlan>({
+  monday: { breakfast: [], lunch: [], dinner: [] },
+  // ...resto de días
+});
+
+export const addRecipeToPlan = (
+  day: DayOfWeek,
+  meal: MealType,
+  recipe: Recipe
+) => {
+  weekPlan.setKey(day, {
+    ...weekPlan.get()[day],
+    [meal]: [...weekPlan.get()[day][meal], recipe]
+  });
+};
+```
+
+<br>
+<br>
+
+<div align="center">
+
+<code>DESIGNED & CODED BY @samuhlo</code>
+
+<br />
+
+<small>Lugo, Galicia · 2024-2025</small>
+
+</div>

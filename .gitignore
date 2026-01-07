@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+.agents
+.cursor
+
 # dependencies
 node_modules/
 
