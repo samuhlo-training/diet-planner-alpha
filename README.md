@@ -28,7 +28,7 @@
 >
 > <br />
 >
-> **DEMO LIVE:** [diet-planner-alpha.pages.dev/welcome](https://diet-planner-alpha.pages.dev/welcome/)
+> **DEMO LIVE:** [diet-planner-alpha-xi.vercel.app](https://diet-planner-alpha-xi.vercel.app/)
 >
 > <br />
 >
