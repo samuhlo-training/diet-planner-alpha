@@ -20,7 +20,7 @@
 
 ---
 
-### 00. PREVIEW
+### 00 __ PREVIEW
 
 ![Diet Planner Preview](vistaprevia.webp)
 
@@ -36,7 +36,7 @@
 
 ---
 
-### 01. ARCHITECTURE & DECISIONS
+### 01 __ ARCHITECTURE & DECISIONS
 
 | COMPONENT | TECH | NOTE |
 | :--- | :--- | :--- |
@@ -53,7 +53,7 @@
 
 <br>
 
-### 02. KEY FEATURES
+### 02 __ KEY FEATURES
 
 #### **AUTHENTICATION SYSTEM**
 - OAuth multi-provider (Google, GitHub)
@@ -82,7 +82,7 @@
 
 <br>
 
-### 03. INSTALLATION
+### 03 __ INSTALLATION
 
 *Run local environment:*
 
@@ -102,7 +102,7 @@ npm install
 npm run dev
 ```
 
-### 04. PROJECT JOURNEY
+### 04 __ PROJECT JOURNEY
 
 Este proyecto nació como experimento de desarrollo rápido para validar una idea. Evolucionó orgánicamente desde un prototipo con datos estáticos hasta una aplicación full-stack completa con backend en la nube.
 
@@ -117,7 +117,7 @@ Este proyecto nació como experimento de desarrollo rápido para validar una ide
 **ARCHIVED STATUS:**
 La versión alfa (v0.1) cumplió su objetivo como prueba de concepto y vehículo de aprendizaje. El código permanece como referencia técnica del prototipo funcional.
 
-### 05. NEXT PHASE: VUE.JS REBUILD
+### 05 __ NEXT PHASE: VUE.JS REBUILD
 
 La reconstrucción profesional seguirá un proceso planificado:
 
@@ -129,7 +129,7 @@ La reconstrucción profesional seguirá un proceso planificado:
 
 <br>
 
-### 06. CODE SNIPPETS
+### 06 __ CODE SNIPPETS
 
 #### A. HYBRID DATA ADAPTER
 Sistema que sincroniza Supabase con fallback inteligente a localStorage:
@@ -185,7 +185,7 @@ export const addRecipeToPlan = (
 
 <div align="center">
 
-<code>DESIGNED & CODED BY @samuhlo</code>
+<code>DESIGNED & CODED BY <a href='https://github.com/samuhlo'>samuhlo</a></code>
 
 <br />
 
